@@ -12,11 +12,11 @@
       <span>邮箱：contact@example.com</span>
     </p>
     <p class="copy">Copyright &copy; 2018 - {{ new Date().getFullYear() }} 天津智生科技有限公司</p>
-    <div>
-      <p>{{ $t('username') }}</p>
-      <p>{{ $t('email') }}</p>
-      <p>{{ $t('mobile') }}</p>
-    </div>
+    <!--    <div>-->
+    <!--      <p>{{ $t('username') }}</p>-->
+    <!--      <p>{{ $t('email') }}</p>-->
+    <!--      <p>{{ $t('mobile') }}</p>-->
+    <!--    </div>-->
   </div>
 </template>
 <script>
@@ -29,7 +29,7 @@ export default {
   width: 100%;
   height: 100%;
   color: #fff;
-  background: #474747;
+  background: #CCB76C;
   overflow: hidden;
   text-align: center;
 }

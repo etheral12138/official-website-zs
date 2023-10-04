@@ -89,7 +89,7 @@ export default new Router({
           name: 'contactus',
           component: resolve => require(['@/view/ContactUs'], resolve),
           meta: {
-            title: '联系我们'
+            title: ''
           }
         },
         {

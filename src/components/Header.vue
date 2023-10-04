@@ -192,7 +192,7 @@ export default {
   color: #fff;
   font-size: 12px;
   line-height: 50px;
-  background: #474747;
+  background: #CCB76C;
 }
 
 /* 顶部的图标 */
