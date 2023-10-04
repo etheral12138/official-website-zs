@@ -3,15 +3,16 @@
     <div class="logo">
       <img alt="logo图" src="@/assets/img/logo_white.png">
     </div>
-    <p class="title">天津智生科技有限公司</p>
+    <p class="title">{{ $t('company') }}</p>
     <p class="address_tel_fax">
-      <span>地址：公司地址</span>
-      <span>Tel：15519701087</span>
+      <span>{{ $t('address') }}：公司地址</span>
+      <span>{{ $t('tel') }}：15519701087</span>
     </p>
     <p class="email_wx">
-      <span>邮箱：contact@example.com</span>
+      <!--      <span>邮箱：contact@example.com</span>-->
+      <span>{{ $t('email') }}：contact@example.com</span>
     </p>
-    <p class="copy">Copyright &copy; 2018 - {{ new Date().getFullYear() }} 天津智生科技有限公司</p>
+    <p class="copy">Copyright &copy; 2022 - {{ new Date().getFullYear() }} {{ $t('company') }}</p>
     <!--    <div>-->
     <!--      <p>{{ $t('username') }}</p>-->
     <!--      <p>{{ $t('email') }}</p>-->

@@ -29,7 +29,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <h2 class="bigData-title">
-            天津智生科技有限公司
+            {{ $t('company') }}
             <!--            <small>/ Big Data Management System</small>-->
           </h2>
           <p>
@@ -45,7 +45,7 @@
     <!-- 主营业务 -->
     <div id="contactUs" class="container-fuild text-center">
       <div class="container contactUs-container wow slideInUp">
-        <h1>主营业务</h1>
+        <h1>{{ $t('main') }}</h1>
         <p>
           一般项目：技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；人工智能双创服务平台；互联网数据服务；人工智能基础资源与技术平台；人工智能公共数据平台；人工智能通用应用系统；人工智能行业应用系统集成服务；信息系统集成服务；人工智能硬件销售；人工智能公共服务平台技术咨询服务；软件开发；计算机系统服务；人工智能应用软件开发；人工智能基础软件开发；人工智能理论与算法软件开发；平面设计；数据处理服务；网络与信息安全软件开发；数据处理和存储支持服务；计算机软硬件及辅助设备零售；计算机软硬件及辅助设备批发；工业控制计算机及系统销售，科技课题研发。</p>
         <!--        <button-->
@@ -54,11 +54,11 @@
         <!--          onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#3f3f3f';"-->
         <!--        >联系我们-->
         <!--        </button>-->
-        <div class="contactUs-contactWay">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <!--        <div class="contactUs-contactWay">-->
+        <!--          <span></span>-->
+        <!--          <span></span>-->
+        <!--          <span></span>-->
+        <!--        </div>-->
       </div>
     </div>
     <!-- 客户评价 -->
@@ -109,7 +109,7 @@
     <div id="whyChooseUs" class="conatiner-fuild">
       <div class="container text-center">
         <div class="whyChooseUs-title text-center">
-          <p>团队介绍</p>
+          <p>{{ $t('group') }}</p>
           <!--          <p>THE REASON TO CHOOSING US</p>-->
         </div>
         <div class="row row-cols-4">
@@ -119,18 +119,21 @@
             class=" col  server-wrapper"
           >
             <div
-              class="server-block wow slideInUp"
-              onmouseenter="this.style.color='#28f';this.style.borderColor='#28f'"
-              onmouseleave="this.style.color='#666';this.style.borderColor='#ccc'"
-            >
-              <img :src="item.logo" alt="logo" class="center-block img-circle">
-              <p class="text-center">{{ item.title }}</p>
-              <div
-                class="text-center"
-                onmouseenter="this.style.color='#28f'"
-                onmouseleave="this.style.color='#ccc'"
-                v-html="item.content"
-              ></div>
+              class="server-block wow slideInUp">
+              <!--              onmouseenter="this.style.color='#28f';this.style.borderColor='#28f'"-->
+              <!--              onmouseleave="this.style.color='#666';this.style.borderColor='#ccc'"-->
+              <div>
+                <img :src="item.logo" alt="logo" class="center-block img-circle">
+              </div>
+              <div>
+                <p class="text-center">{{ item.title }}</p>
+                <div
+                  class="text-center"
+                  v-html="item.content">
+                  <!--                  onmouseenter="this.style.color='#28f'"-->
+                  <!--                  onmouseleave="this.style.color='#ccc'"-->
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -497,11 +500,12 @@ export default {
   padding: 50px 20px;
   border: 1px solid #ccc;
   border-bottom: 5px solid #ccc;
+//display: flex;
 }
 
 #whyChooseUs .server-block img {
-  width: 48px;
-  height: 48px;
+  width: 10rem;
+  height: 10rem;
 }
 
 #whyChooseUs .server-block > p {
@@ -510,7 +514,7 @@ export default {
 }
 
 #whyChooseUs .server-block > div {
-  color: #ccc;
+  color: #000;
 }
 
 /* 媒体查询（手机） */
@@ -607,17 +611,17 @@ export default {
   }
 
   #whyChooseUs .server-block img {
-    width: 48px;
-    height: 48px;
+    width: 10rem /* 6/16 */;
+    height: 10rem;
   }
 
   #whyChooseUs .server-block > p {
     font-size: 20px;
-    margin: 30px 0;
+    margin: 20px 0;
   }
 
   #whyChooseUs .server-block > div {
-    color: #ccc;
+    color: #000;
   }
 }
 

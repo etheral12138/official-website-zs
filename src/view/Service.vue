@@ -2,7 +2,7 @@
   <div id="Service">
     <div class="container text-center">
       <h3>我们专注的行业</h3>
-      <p style="color:#b2b2b2">The Best Service You Never See</p>
+      <!--      <p style="color:#b2b2b2">The Best Service You Never See</p>-->
     </div>
     <div class="container">
       <div class="Service-container row">

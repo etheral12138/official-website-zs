@@ -1,25 +1,25 @@
 <template>
   <div id="ContactUs">
-    <div class="banner container-fuild text-center">联系我们</div>
+    <div class="banner container-fuild text-center">{{ $t('contact') }}</div>
     <div class="container">
       <div class="container-fuild ContactUs-container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-6">
             <form class="form-horizontal" role="form">
               <div class="form-group">
-                <label class="col-sm-2 control-label" for="name">姓名</label>
+                <label class="col-sm-2 control-label" for="name">{{ $t('name') }}</label>
                 <div class="col-sm-10 col-xs-12">
                   <input id="name" class="form-control" placeholder="请输入名字" type="text">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label" for="email">邮箱</label>
+                <label class="col-sm-2 control-label" for="email">{{ $t('email') }}</label>
                 <div class="col-sm-10">
                   <input id="email" class="form-control" placeholder="请输入邮箱" type="text">
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-sm-2 control-label" for="tel">电话</label>
+                <label class="col-sm-2 control-label" for="tel">{{ $t('tel') }}</label>
                 <div class="col-sm-10">
                   <input id="tel" class="form-control" placeholder="请输入电话" type="text">
                 </div>

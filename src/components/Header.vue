@@ -7,7 +7,7 @@
         <div class="server pull-left">
           <span class="glyphicon glyphicon-earphone"></span>15519701087
           <span class="glyphicon glyphicon-envelope"></span>contact@example.com
-          <span class="glyphicon glyphicon-time"></span>7x24小时为您服务
+          <!--          <span class="glyphicon glyphicon-time"></span>7x24小时为您服务-->
         </div>
         <div class="shejiao pull-right">
           <span class="glyphicon glyphicon-hand-right"></span>欢迎联系我们！
@@ -30,7 +30,7 @@
           @click="navClick(index,item.name)"
         >
           <router-link :to="item.path">
-            {{ item.name }}
+            {{ $t(item.name) }}
             <span v-if="item.children.length>0" class="glyphicon glyphicon-menu-down"></span>
             <i class="underline"></i>
           </router-link>
@@ -42,11 +42,11 @@
         </li>
         <el-dropdown @command="handleCommand">
           <span class="el-dropdown-link language_switch">
-          切换语言<i class="el-icon-arrow-down el-icon--right"></i>
+          {{ $t('switch') }}<i class="el-icon-arrow-down el-icon--right"></i>
           </span>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item command="zh">中文</el-dropdown-item>
-            <el-dropdown-item command="en">英文</el-dropdown-item>
+            <el-dropdown-item command="en">English</el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
       </ul>
@@ -94,16 +94,18 @@
   </div>
 </template>
 <script>
+import {zh} from '../locale/zh'
+
 export default {
   name: "Header",
   data() {
     return {
       navIndex: sessionStorage.getItem('navIndex') ? sessionStorage.getItem('navIndex') : 0,
-      menuName: "首页",
+      menuName: `${zh.company}`,
       menuClass: "glyphicon glyphicon-menu-down",
       navList: [
         {
-          name: "首页",
+          name: "home",
           path: "/",
           children: []
         },
@@ -122,8 +124,8 @@ export default {
         //   ]
         // },
         {
-          name: "专注行业",
-          path: "/service",
+          name: "field.field",
+          path: "/field",
           children: []
         },
         // {
@@ -132,7 +134,7 @@ export default {
         //   children: []
         // },
         {
-          name: "公司荣誉",
+          name: "award.award",
           path: "/companyintroduction",
           children: []
         },
@@ -142,7 +144,7 @@ export default {
         //   children: []
         // },
         {
-          name: "联系我们",
+          name: "contact",
           path: "/contactus",
           children: []
         }

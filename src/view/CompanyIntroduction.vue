@@ -1,6 +1,6 @@
 <template>
   <div id="CompanyIntroduction">
-    <div class="banner container-fuild text-center">关于我们</div>
+    <div class="banner container-fuild text-center">{{ $t('award.award') }}</div>
     <div class="container">
       <div class="row CompanyIntroduction-container">
         <div class="col-xs-12 col-sm-12 col-md-4 wow zoomIn">
@@ -8,7 +8,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8">
           <!--                    <h3>天津智生科技有限公司</h3>-->
-          <h3>公司研发成员获得荣誉</h3>
+          <!--          <h3>公司研发成员获得荣誉</h3>-->
           <p class=".text-justify"></p>
           <p class=".text-justify"></p>
           <p class=".text-justify">国家级科技一等奖</p>

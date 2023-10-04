@@ -55,8 +55,8 @@ export default new Router({
         //   ]
         // },
         {
-          path: '/service',
-          name: 'service',
+          path: '/field',
+          name: 'field',
           component: resolve => require(['@/view/Service'], resolve),
           meta: {
             title: '相关服务'
