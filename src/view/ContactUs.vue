@@ -4,7 +4,7 @@
     <div class="container">
       <div class="container-fuild ContactUs-container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="col-xs-12 col-sm-12">
             <form class="form-horizontal" role="form">
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="name">{{ $t('name') }}</label>
@@ -37,9 +37,9 @@
               </div>
             </form>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6">
-            <div id="map" class="wow zoomIn"></div>
-          </div>
+          <!--          <div class="col-xs-12 col-sm-12 col-md-6">-->
+          <!--&lt;!&ndash;            <div id="map" class="wow zoomIn"></div>&ndash;&gt;-->
+          <!--          </div>-->
         </div>
       </div>
     </div>
