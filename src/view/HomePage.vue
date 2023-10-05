@@ -424,20 +424,6 @@ export default {
   margin: 30px;
 }
 
-#contactUs .contactUs-container .contactUs-contactWay span:nth-of-type(1) {
-  background: url("../assets/img/weixin.png") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
-
-#contactUs .contactUs-container .contactUs-contactWay span:nth-of-type(2) {
-  background: url("../assets/img/weibo.png") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
-
-#contactUs .contactUs-container .contactUs-contactWay span:nth-of-type(3) {
-  background: url("../assets/img/twitter.png") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
 
 /* 客户评价 */
 #customer {
