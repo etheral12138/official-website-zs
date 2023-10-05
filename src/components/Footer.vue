@@ -5,14 +5,15 @@
     </div>
     <p class="title">{{ $t('company') }}</p>
     <p class="address_tel_fax">
-      <span>{{ $t('address') }}：公司地址</span>
+      <!--      <span>{{ $t('address') }}：公司地址</span>-->
       <span>{{ $t('tel') }}：15519701087</span>
     </p>
     <p class="email_wx">
       <!--      <span>邮箱：contact@example.com</span>-->
       <span>{{ $t('email') }}：contact@example.com</span>
     </p>
-    <p class="copy">Copyright &copy; 2022 - {{ new Date().getFullYear() }} {{ $t('company') }}</p>
+    <p class="copy">Copyright &copy; 2022 - {{ new Date().getFullYear() }} </p>
+    <p>{{ $t('company') }}</p>
     <!--    <div>-->
     <!--      <p>{{ $t('username') }}</p>-->
     <!--      <p>{{ $t('email') }}</p>-->
